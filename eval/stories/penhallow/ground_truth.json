@@ -1,0 +1,35 @@
+{
+  "_about": "Written 20 Oct 2026, 'The Last Harvest at Penhallow' (3 chapters, 6 planted mistakes, 2 traps). Written by the assistant who knows which kinds of mistake the checks cover, so it is NOT held out. Test run local vs deployed by the user.",
+  "held_out": false,
+  "chapters": ["ch1", "ch2", "ch3"],
+  "planted": [
+    {"id": "A1", "type": "attribute", "chapter": "ch3", "entity_contains": ["iris"],
+     "description": "Iris has green eyes (ch1) but blue eyes (ch3).",
+     "new_keywords": ["blue"], "old_keywords": ["green"]},
+    {"id": "A2", "type": "attribute", "chapter": "ch2", "entity_contains": ["dominic"],
+     "description": "Dominic's scar is through his left eyebrow (ch1) but his right eyebrow (ch2).",
+     "new_keywords": ["right"], "old_keywords": ["left"]},
+    {"id": "S1", "type": "status", "chapter": "ch3", "entity_contains": ["osei"],
+     "description": "Mr. Osei died on Sunday and was buried on Tuesday (ch1, ch2) but lifts a crate and winks on Saturday (ch3).",
+     "new_keywords": ["hoisted", "winked", "crate"], "old_keywords": ["died", "buried", "funeral"]},
+    {"id": "S2", "type": "status", "chapter": "ch3", "entity_contains": ["truck", "ford", "dominic"],
+     "description": "The truck's axle snapped and it 'will never run again', scrapped (ch2) but Dominic loads and starts it for market (ch3).",
+     "new_keywords": ["started the engine", "blue truck", "drive"], "old_keywords": ["never run again", "axle", "scrapyard"]},
+    {"id": "S3", "type": "status", "chapter": "ch3", "entity_contains": ["iris"],
+     "description": "Iris broke her right wrist, cast for six weeks, no lifting or climbing (ch2) but climbs a ladder with both hands picking apples (ch3).",
+     "new_keywords": ["climbed with both hands", "stepladder"], "old_keywords": ["cast", "wrist", "no climbing"]},
+    {"id": "T1", "type": "timeline", "chapter": "ch3", "entity_contains": ["iris"],
+     "description": "Iris is twenty-eight (ch1) but 'thirty-three that spring' (ch3), in the same October.",
+     "new_keywords": ["thirty-three", "33"], "old_keywords": ["twenty-eight", "28"]}
+  ],
+  "decoys": [
+    {"id": "D1", "chapter": "ch3", "entity_contains": ["barn"],
+     "description": "The barn is red when Iris was nine (ch1, ch3 memory) and grey now (ch1, ch2): it was repainted over the years; the red is a memory.",
+     "new_keywords": ["grey"], "old_keywords": ["red"]},
+    {"id": "D2", "chapter": "ch3", "entity_contains": ["iris"],
+     "description": "Iris left the valley at twenty-six (ch3 memory) and has been away two years: consistent with twenty-eight.",
+     "new_keywords": ["twenty-six", "26"], "old_keywords": []}
+  ],
+  "same_entity": [["Iris Calder", "Iris"], ["Dominic"], ["Fenna"], ["Mr. Osei"], ["Mr. Hale"]],
+  "different_entities": [["Iris Calder", "Dominic"], ["Fenna", "Mr. Hale"]]
+}
